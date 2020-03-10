@@ -5,10 +5,20 @@ body{
 h1, h2, h3{
     color: #66b6bd;
     font-size: 20pt;
+    margin-bottom: 10px;
 }
 
-.nav__logo a{
-    color: #66b6bd ;
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1rem;
+    color: #737374;
 }
 
 .menu{
@@ -69,7 +79,7 @@ hr{
     align-items: center;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
     height: 120vh;
 }
 
@@ -84,10 +94,6 @@ hr{
     text-align: center;
 }
 
-.about p{
-    color: #575454;
-}
-
 .about__skills{
     background-color: #dfe0e0;
     width: 90%;
@@ -99,6 +105,8 @@ hr{
     justify-content: center;
     margin-bottom: 10px;
 }
+
+
 
 .about h4{
     color: #575454;
@@ -121,12 +129,20 @@ hr{
     border: 2px solid #66b6bd;
 }
 
+.about__skills-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .skills__container{
     display: flex;
-    flex-direction: row;
     width: 90%;
     text-align: left;
     justify-content: center;
+    
 }
 
 .skill__name{
@@ -138,6 +154,7 @@ hr{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    height: 270vh;
 }
 
 .btn-primary{
@@ -147,6 +164,15 @@ hr{
 
 .btn-primary:hover{
     background-color: #66b6bd;
+}
+
+.card{
+    margin-bottom: 10px;
+    width: 18rem;
+}
+
+.card img{
+    height: 40vh;
 }
 
 .card-title{
@@ -159,7 +185,7 @@ hr{
 
 
 .footer{
-    height: 10vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,4 +199,143 @@ hr{
 .footer__icon{
 
     height: 5vh;
+}
+
+.fa-github:before, .fa-linkedin:before, .fa-envelope:before{
+    color: #66b6bd;
+    font-size: 5vh;
+}
+
+
+@media(min-width: 768px){
+    .summary{
+        height: 99vh;
+    }
+
+    .summary__container-text{
+        width: 50%;
+    }
+
+    .skill__name{
+        width: 35%;
+    }
+
+    .about__skills{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .about{
+        height: 115vh;
+    }
+    .about__container {
+        height: 35vh;
+        width: 50%;
+    }
+
+    .skills__container{
+        margin-bottom: 10px;
+    }
+    .summary__container:nth-child(2) {
+        height: 57vh;
+    }
+
+    .projects{
+        height: 100vh;
+    }
+
+    .projects__container{
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+    }
+
+    hr{
+        width: 40%;
+    }
+
+    .card{
+        width: 15rem;
+
+    }
+
+    
+    .about h4{
+        font-size: 11pt;
+    }
+}
+
+@media(min-width: 1024px){
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .summary__container{
+        height: 50vh;
+    }
+
+    .about{
+        height: 124vh;
+    }
+
+    .about__container{
+        height: 25vh;
+    }
+
+    .about__skills{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        height: 65vh;
+        margin-bottom: 19px;
+    }
+    .about h4{
+        font-size: 15pt;
+    }
+
+    .card{
+        width: 16rem;
+    }
+
+    .projects__container{
+        width: 80%;
+    }
+
+    .projects{
+        height: 90vh;
+    }
+}
+
+@media(min-width: 1200px){
+    .summary__container:nth-child(2){
+        height: 30vh;
+    }
+
+    .summary{
+        height: 130%;
+    }
+    
+    .about__container{
+        height: 20vh;
+    }
+
+    .about__skills{
+        width: 65%;
+        margin-bottom: 30px;
+    }
+
+    .projects{
+        height: 85vh;
+    }
+
+    .projects__container{
+        width: 65%;
+    }
+    
+    hr{
+        width: 30%;
+    }
+    
 }
