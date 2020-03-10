@@ -1,0 +1,176 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3{
+    color: #66b6bd;
+    font-size: 20pt;
+}
+
+.nav__logo a{
+    color: #66b6bd ;
+}
+
+.menu{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:#575454;  
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #66b6bd;
+}
+
+.summary{
+    height: 110vh;
+}
+
+.summary__photo{
+    height: 47vh;
+    border-radius: 100%;
+}
+
+.summary__container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 45vh;
+    width: 100%;
+}
+.summary__container:nth-child(2){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.summary__container-text{
+    width: 80%;
+    text-align: center;
+    color: #575454;
+}
+
+hr{
+    border: none;
+    height: 5px;
+    width: 50%;
+    background-color: #dfe0e0;
+}
+
+.about{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    height: 120vh;
+}
+
+.about__title{
+    color: #66b6bd;
+    font-size: 18pt;
+}
+
+.about__container{
+    height: 40vh;
+    width: 80%;
+    text-align: center;
+}
+
+.about p{
+    color: #575454;
+}
+
+.about__skills{
+    background-color: #dfe0e0;
+    width: 90%;
+    border-radius: .25rem;
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.about h4{
+    color: #575454;
+    font-size: 10pt;
+}
+
+.skill{
+    background-color: #66b6bd;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin: 3px;
+}
+
+.skill-empty{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    margin: 3px;
+    border: 2px solid #66b6bd;
+}
+
+.skills__container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    text-align: left;
+    justify-content: center;
+}
+
+.skill__name{
+    width: 30%;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-primary{
+    background-color: #66b6bd;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #66b6bd;
+}
+
+.card-title{
+    color: #66b6bd;
+}
+
+.card-text{
+    color: #575454;
+}
+
+
+.footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__container i{
+    height: 5vh;
+    color: black;
+}
+
+.footer__icon{
+
+    height: 5vh;
+}
