@@ -214,12 +214,34 @@ hr{
 
 .fa-github:before, .fa-linkedin:before, .fa-envelope:before{
     color: #66b6bd;
-    font-size: 5vh;
+    font-size: 1.5rem;
+}
+
+@media(min-width: 360px){
+    .summary__container:nth-child(2){
+        height: 45vh;
+    }
+
+    .about__container{
+        height: 130vh;
+    }
+
+    .about__skills{
+        height: 45vh;
+    }
 }
 
 @media(min-width: 375px){
     .about__container{
-        height: 175vh;
+        height: 135vh;
+    }
+
+    .summary__container:nth-child(2){
+        height: 50vh;
+    }
+
+    .about__skills{
+        height: 50vh;
     }
 }
 
@@ -255,10 +277,11 @@ hr{
         display: flex;
         flex-direction: row;
         width: 80%;
+        height: 30vh;
     }
 
     .about__container {
-        height: 135vh;
+        height: 67vh;
         width: 70%;
     }
 
@@ -266,7 +289,7 @@ hr{
         margin-bottom: 10px;
     }
     .summary__container:nth-child(2) {
-        height: 50vh;
+        height: 25vh;
     }
 
     .projects__container{
@@ -284,7 +307,6 @@ hr{
 
     }
 
-    
     .skill__name h4{
         font-size: 11pt;
     }
@@ -357,4 +379,45 @@ hr{
     hr{
         width: 30%;
     }    
+}
+
+@media (min-width: 1440px){
+    .about__container {
+        height: 90vh;
+    }
+
+    .card{
+        width: 18rem;
+    }
+}
+
+@media(min-width: 1920px){
+    .summary__container-text{
+        width: 44%;
+    }
+
+    .summary__container:nth-child(2){
+        height: 20vh;
+    }
+
+    .about__beginning, .about__studies {
+        width: 62%;
+    }
+
+    .about__container{
+        height: 55vh;
+    }
+
+    .about__skills{
+        width: 55%;
+        height: 34vh;
+    }
+
+    .projects__container{
+        width: 60%;
+    }
+    
+    .card{
+        width: 22rem;
+    }
 }
