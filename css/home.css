@@ -3,9 +3,9 @@ body{
 }
 
 h1, h2, h3{
-    color: #66b6bd;
+    color: #428f96;
     font-size: 20pt;
-    margin-bottom: 10px;
+    
 }
 
 h1{
@@ -14,18 +14,19 @@ h1{
 
 h2{
     font-size: 2rem;
+    margin-top: 60px;
 }
 
 h4{
     text-align: start;
 }
 
-h5, h6, .about-title{
-    color: #575454;
+h5, .about-title{
+    color: #66b6bd;
 }
 
-.about-title{
-    text-align: center;
+h6{
+   color: #575454;
 }
 
 p{
@@ -45,11 +46,15 @@ nav{
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color:#575454;  
+    color: #66b6bd;  
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
-    color: #66b6bd;
+    color: #428f96;
+}
+
+.summary, .menu{
+    background-color: #e0ebe8;
 }
 
 .summary__photo{
@@ -75,8 +80,12 @@ nav{
     width: 80%;
     text-align: center;
     color: #575454;
+    margin-top: 15px;
 }
 
+.summary__paragraph{
+    text-align: center;
+}
 hr{
     border: none;
     height: 1px;
@@ -91,8 +100,14 @@ hr{
     justify-content: center;
 }
 
+.about-title{
+    text-align: start;
+    margin-top: 30px;
+}
+
+
 .about__container{
-    height: 185vh;
+    height: 187vh;
     width: 100%;
     text-align: center;
     display: flex;
@@ -108,10 +123,16 @@ hr{
     text-align: start;
 }
 
-
+.skills__container{
+    background-color: #dfe0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .about__skills{
     background-color: #dfe0e0;
-    width: 90%;
+    width: 100%;
     border-radius: .25rem;
     display: flex;
     height: 60vh;
@@ -150,7 +171,7 @@ hr{
     justify-content: center;
 }
 
-.skills__container{
+.skills__content{
     display: flex;
     width: 90%;
     text-align: left;
@@ -167,6 +188,10 @@ hr{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.projects__container{
+    margin-top: 30px;
 }
 
 .btn-primary{
@@ -223,7 +248,7 @@ hr{
     }
 
     .about__container{
-        height: 130vh;
+        height: 143vh;
     }
 
     .about__skills{
@@ -233,7 +258,7 @@ hr{
 
 @media(min-width: 375px){
     .about__container{
-        height: 135vh;
+        height: 150vh;
     }
 
     .summary__container:nth-child(2){
@@ -242,7 +267,10 @@ hr{
 
     .about__skills{
         height: 50vh;
+        margin: 0;
     }
+
+    
 }
 
 @media(min-width: 425px){
@@ -281,7 +309,7 @@ hr{
     }
 
     .about__container {
-        height: 67vh;
+        height: 78vh;
         width: 70%;
     }
 
@@ -360,11 +388,11 @@ hr{
 
 @media(min-width: 1200px){
     .summary__container:nth-child(2){
-        height: 30vh;
+        height: 40vh;
     }
     
     .about__container{
-        height: 105vh;
+        height: 125vh;
     }
 
     .about__skills{
@@ -374,11 +402,13 @@ hr{
 
     .projects__container{
         width: 65%;
+        margin-top: 40px;
     }
     
     hr{
         width: 30%;
-    }    
+    }   
+    
 }
 
 @media (min-width: 1440px){
@@ -405,7 +435,7 @@ hr{
     }
 
     .about__container{
-        height: 55vh;
+        height: 67vh;
     }
 
     .about__skills{
