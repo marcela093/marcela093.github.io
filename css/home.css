@@ -16,9 +16,22 @@ h2{
     font-size: 2rem;
 }
 
+h4{
+    text-align: start;
+}
+
+h5, h6, .about-title{
+    color: #575454;
+}
+
+.about-title{
+    text-align: center;
+}
+
 p{
     font-size: 1rem;
     color: #737374;
+    text-align: start;
 }
 
 .menu{
@@ -39,10 +52,6 @@ nav{
     color: #66b6bd;
 }
 
-.summary{
-    height: 110vh;
-}
-
 .summary__photo{
     height: 47vh;
     border-radius: 100%;
@@ -59,7 +68,7 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 65vh;
 }
 
 .summary__container-text{
@@ -70,7 +79,7 @@ nav{
 
 hr{
     border: none;
-    height: 5px;
+    height: 1px;
     width: 50%;
     background-color: #dfe0e0;
 }
@@ -80,19 +89,25 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 120vh;
-}
-
-.about__title{
-    color: #66b6bd;
-    font-size: 18pt;
 }
 
 .about__container{
-    height: 40vh;
-    width: 80%;
+    height: 185vh;
+    width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.about__beginning, .about__studies{
+    width: 80%;
+}
+
+.about__studies{
+    text-align: start;
+}
+
 
 .about__skills{
     background-color: #dfe0e0;
@@ -106,9 +121,7 @@ hr{
     margin-bottom: 10px;
 }
 
-
-
-.about h4{
+.skill__name h4{
     color: #575454;
     font-size: 10pt;
 }
@@ -154,7 +167,6 @@ hr{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 270vh;
 }
 
 .btn-primary{
@@ -183,7 +195,6 @@ hr{
     color: #575454;
 }
 
-
 .footer{
     height: 15vh;
     display: flex;
@@ -206,14 +217,34 @@ hr{
     font-size: 5vh;
 }
 
+@media(min-width: 375px){
+    .about__container{
+        height: 175vh;
+    }
+}
+
+@media(min-width: 425px){
+    .summary__container:nth-child(2) {
+        height: 55vh;
+    }
+    .summary__container-text {
+        width: 85%;
+    }
+    .about__beginning, .about__studies {
+        width: 85%;
+    }
+    .about__container{
+        height: 150vh;
+    }
+}
 
 @media(min-width: 768px){
-    .summary{
-        height: 99vh;
+    .summary__container-text{
+        width: 60%;
     }
 
-    .summary__container-text{
-        width: 50%;
+    .about__beginning, .about__studies {
+        width: 90%;
     }
 
     .skill__name{
@@ -226,23 +257,16 @@ hr{
         width: 80%;
     }
 
-    .about{
-        height: 115vh;
-    }
     .about__container {
-        height: 35vh;
-        width: 50%;
+        height: 135vh;
+        width: 70%;
     }
 
     .skills__container{
         margin-bottom: 10px;
     }
     .summary__container:nth-child(2) {
-        height: 57vh;
-    }
-
-    .projects{
-        height: 100vh;
+        height: 50vh;
     }
 
     .projects__container{
@@ -261,7 +285,7 @@ hr{
     }
 
     
-    .about h4{
+    .skill__name h4{
         font-size: 11pt;
     }
 }
@@ -276,12 +300,20 @@ hr{
         height: 50vh;
     }
 
-    .about{
-        height: 124vh;
+    .summary__container-text{
+        width: 52%;
+    }
+
+    .summary__container:nth-child(2){
+        height: 45vh;
+    }
+
+    .about__beginning, .about__studies {
+        width: 75%;
     }
 
     .about__container{
-        height: 25vh;
+        height: 130vh;
     }
 
     .about__skills{
@@ -291,7 +323,7 @@ hr{
         height: 65vh;
         margin-bottom: 19px;
     }
-    .about h4{
+    .skill__name h4{
         font-size: 15pt;
     }
 
@@ -302,32 +334,20 @@ hr{
     .projects__container{
         width: 80%;
     }
-
-    .projects{
-        height: 90vh;
-    }
 }
 
 @media(min-width: 1200px){
     .summary__container:nth-child(2){
         height: 30vh;
     }
-
-    .summary{
-        height: 130%;
-    }
     
     .about__container{
-        height: 20vh;
+        height: 105vh;
     }
 
     .about__skills{
         width: 65%;
         margin-bottom: 30px;
-    }
-
-    .projects{
-        height: 85vh;
     }
 
     .projects__container{
