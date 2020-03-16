@@ -2,6 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 h1, h2, h3{
     color: #428f96;
     font-size: 20pt;
@@ -225,6 +226,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
 }
 
 .footer__container i{
