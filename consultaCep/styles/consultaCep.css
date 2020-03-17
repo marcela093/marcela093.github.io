@@ -1,0 +1,90 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(231, 189, 189) ; */
+}
+
+main{
+    background-color: rgb(180, 176, 176);
+    border-radius: 5px;
+    height: 75vh;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    margin-top: 70px;
+}
+
+.title{
+    width: 100%;
+    background-color: rgb(231, 189, 189);
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+}
+
+img{
+    height: 4vh;
+}
+
+.input-cep{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#input-user, #btn-send{
+    border: none;
+}
+
+#btn-send{
+    background-color: rgb(231, 189, 189);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+input{
+    height: 4vh;
+    width: 17vw;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+   
+}
+
+.data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+
+label{
+    width: 80%;
+    margin-top: 5px;
+}
+
+div{
+    display: flex;
+}
+
+#street, #complement, #neighborhood, #city, #state{
+    background-color: #ece4e4;
+    height: 4vh;
+    width: 20vw;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+}
