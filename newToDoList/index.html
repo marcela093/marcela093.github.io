@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+</head>
+<body>
+    <main class="list">
+        <div class="list__title">
+            <h1>Lista de Tarefas</h1>
+        </div>
+        <div class="list__container">
+            <form class="list__content">
+                <select name="select-options" id="options">
+                    <option value="" class="option-one">Selecione uma opção:</option>
+                    <option value="Academia" class="selected-item">Academia</option>
+                    <option value="Estudos" class="selected-item">Estudos</option>
+                    <option value="Mercado" class="selected-item">Mercado</option>
+                    <option value="Trabalho" class="selected-item">Trabalho</option>
+                    <option value="Finanças" class="selected-item">Finanças</option>
+                </select>
+                <input type="text" class="input-user" maxlength="45" placeholder="Digite aqui">
+                <span class="error"></span>
+                <button class="list__btn-add">Adicionar Tarefa</button>
+                <div class="buttons">
+                    <div class="all-done__container">
+                        <i class="fas fa-check"></i>
+                        <p class="all-done">Todas feitas</p>
+                    </div>
+                    <div class="delete-all__container">
+                        <i class="far fa-trash-alt"></i>
+                        <p class="delete-all">Apagar Todas</p>
+                    </div>
+                </div>
+            </form>
+            <div class="list__to-do">
+                <ul class="list__item"></ul>
+            </div>
+        </div>
+       
+      
+       <script src="./js/script.js"></script>
+    </main>
+</body>
+</html>
