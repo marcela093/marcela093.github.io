@@ -6,19 +6,21 @@ const input = getAllElements('.input-user');
 
 form.addEventListener('submit', function(event){
     event.preventDefault();
-    console.log('cliquei aqui');
     
-    const error = getAllElements('.error');
+    validation = inputValidation();
+    
+    form.reset();
+});
 
+function inputValidation(){
+    const error = getAllElements('.error');
     if(input.value.trim() === ''){
         error.textContent = 'Digite uma tarefa válida';
     }else{
         error.textContent = '';
         createAndDeleteItens();
     }
-
-    form.reset();
-});
+}
 
 function createAndDeleteItens(){
     const ul = getAllElements('.list__item');
@@ -39,8 +41,7 @@ function createAndDeleteItens(){
     itemContent.setAttribute('class', 'item-style');
     itemsList.appendChild(itemContent);
 
-
-
+    
     itemContent,itemsList.addEventListener('dblclick', function(){
         itemContent.classList.add('check');
         itemsList.classList.add('check-div');

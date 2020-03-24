@@ -2,6 +2,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* .menu{
+    background-image: url('../images/background.png');
+    background-size: 80vh;
+} */
+
 
 h1, h2, h3{
     color: #428f96;
@@ -16,10 +21,6 @@ h1{
 h2{
     font-size: 2rem;
     margin-top: 60px;
-}
-
-h4{
-    text-align: start;
 }
 
 h5, .about-title{
@@ -108,15 +109,15 @@ hr{
 
 
 .about__container{
-    height: 187vh;
+    /* height: 187vh; */
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.about__beginning, .about__studies{
+.about__beginning, .about__studies, .about__hobbies{
     width: 80%;
 }
 
@@ -222,7 +223,7 @@ hr{
 }
 
 .footer{
-    height: 15vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,11 +248,7 @@ hr{
 
 @media(min-width: 360px){
     .summary__container:nth-child(2){
-        height: 45vh;
-    }
-
-    .about__container{
-        height: 143vh;
+        height: 50vh;
     }
 
     .about__skills{
@@ -260,10 +257,6 @@ hr{
 }
 
 @media(min-width: 375px){
-    .about__container{
-        height: 150vh;
-    }
-
     .summary__container:nth-child(2){
         height: 50vh;
     }
@@ -272,7 +265,6 @@ hr{
         height: 50vh;
         margin: 0;
     }
-
     
 }
 
@@ -283,12 +275,16 @@ hr{
     .summary__container-text {
         width: 85%;
     }
-    .about__beginning, .about__studies {
+    .about__beginning, .about__studies, .about__hobbies {
         width: 85%;
     }
-    .about__container{
-        height: 150vh;
+}
+
+@media(min-width: 640px){
+    .about__skills{
+        height: 65vh;
     }
+
 }
 
 @media(min-width: 768px){
@@ -296,7 +292,7 @@ hr{
         width: 60%;
     }
 
-    .about__beginning, .about__studies {
+    .about__beginning, .about__studies, .about__hobbies{
         width: 90%;
     }
 
@@ -312,7 +308,6 @@ hr{
     }
 
     .about__container {
-        height: 78vh;
         width: 70%;
     }
 
@@ -320,7 +315,7 @@ hr{
         margin-bottom: 10px;
     }
     .summary__container:nth-child(2) {
-        height: 25vh;
+        height: 30vh;
     }
 
     .projects__container{
@@ -361,63 +356,70 @@ hr{
         height: 45vh;
     }
 
-    .about__beginning, .about__studies {
+    .about__beginning, .about__studies, .about__hobbies {
         width: 75%;
     }
 
     .about__container{
-        height: 130vh;
+        width: 70%;
     }
 
     .about__skills{
         display: flex;
         flex-direction: row;
         width: 70%;
-        height: 65vh;
-        margin-bottom: 19px;
+        height: 35vh;
     }
     .skill__name h4{
         font-size: 15pt;
     }
 
     .card{
-        width: 16rem;
+        width: 18rem;
     }
 
     .projects__container{
-        width: 80%;
+        width: 90%;
     }
 }
 
-@media(min-width: 1200px){
+@media(min-width: 1280px){
     .summary__container:nth-child(2){
         height: 40vh;
     }
+
+    .summary__container-text{
+        width: 48%;
+    }
     
     .about__container{
-        height: 125vh;
+        width: 65%;
     }
 
     .about__skills{
-        width: 65%;
-        margin-bottom: 30px;
+        width: 55%;
+        margin-bottom: 20px;
+    }
+
+    .card{
+        width: 17rem;
     }
 
     .projects__container{
-        width: 65%;
-        margin-top: 40px;
+        width: 70%;
+        
     }
-    
-    hr{
-        width: 30%;
-    }   
+
+    h2{
+        margin-bottom: 20px;
+    }
     
 }
 
 @media (min-width: 1440px){
-    .about__container {
+    /* .about__container {
         height: 90vh;
-    }
+    } */
 
     .card{
         width: 18rem;
@@ -426,31 +428,31 @@ hr{
 
 @media(min-width: 1920px){
     .summary__container-text{
-        width: 44%;
+        width: 40%;
     }
 
     .summary__container:nth-child(2){
         height: 20vh;
     }
 
-    .about__beginning, .about__studies {
+    .about__beginning, .about__studies, .about__hobbies {
         width: 62%;
     }
 
-    .about__container{
+    /* .about__container{
         height: 67vh;
-    }
+    } */
 
     .about__skills{
-        width: 55%;
-        height: 34vh;
+        width: 48%;
+        height: 30vh;
     }
 
     .projects__container{
-        width: 60%;
+        width: 70%;
     }
     
     .card{
-        width: 22rem;
+        width: 24rem;
     }
 }

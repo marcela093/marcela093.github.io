@@ -192,3 +192,9 @@ hr{
     width: 200px;
     display: flex;
 }
+
+@media(max-width: 375px){
+    .list{
+        width: 100%;
+    }
+}
