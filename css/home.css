@@ -256,6 +256,7 @@ hr{
 
 .card img{
     height: 40vh;
+    opacity: 0.7;
 }
 
 .card-title{
