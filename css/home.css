@@ -2,11 +2,27 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* .menu{
+/* .about__hobbies{
     background-image: url('../images/background.png');
-    background-size: 80vh;
+    background-size: 120vh;
+    opacity: 0.8;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
 } */
 
+/* .about__hobbies div{
+    background-color: #ffffff;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+} */
 
 h1, h2, h3{
     color: #428f96;
@@ -109,9 +125,7 @@ hr{
 
 
 .about__container{
-    /* height: 187vh; */
     width: 100%;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,19 +139,48 @@ hr{
     text-align: start;
 }
 
+.about__hobbies-text{
+    height: 17vh;
+}
+
+.about__hobbies-div{
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+.corgi{
+    height: 7vh;
+}
+
+.game{
+    height: 4vh;
+}
+
+.movie{
+    height: 10vh;
+}
+
+.about-text:nth-child(1){
+    margin: 0;
+}
+
+.about-text{
+    margin: 10px 0px 0 20px;
+    color: #737374;
+}
 .skills__container{
-    background-color: #dfe0e0;
+    /* background-color: #dfe0e0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .about__skills{
-    background-color: #dfe0e0;
+    /* background-color: #dfe0e0; */
     width: 100%;
     border-radius: .25rem;
     display: flex;
-    height: 60vh;
+    height: 62vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -190,6 +233,7 @@ hr{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #dfe0e0;
 }
 
 .projects__container{
@@ -206,7 +250,7 @@ hr{
 }
 
 .card{
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     width: 18rem;
 }
 
@@ -223,12 +267,15 @@ hr{
 }
 
 .footer{
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* flex-direction: column; */
+}
+
+.footer p{
+    margin-top: 15px;
 }
 
 .footer__container i{
@@ -262,9 +309,14 @@ hr{
     }
 
     .about__skills{
-        height: 50vh;
+        height: 55vh;
         margin: 0;
     }
+    
+    .about__hobbies-div{
+        height: 11vh;
+    }
+
     
 }
 
@@ -275,7 +327,7 @@ hr{
     .summary__container-text {
         width: 85%;
     }
-    .about__beginning, .about__studies, .about__hobbies {
+    .about__beginning, .about__studies, .about__hobbies{
         width: 85%;
     }
 }
@@ -294,6 +346,10 @@ hr{
 
     .about__beginning, .about__studies, .about__hobbies{
         width: 90%;
+    }
+
+    .about__hobbies-text{
+        height: 5vh;
     }
 
     .skill__name{
@@ -356,7 +412,7 @@ hr{
         height: 45vh;
     }
 
-    .about__beginning, .about__studies, .about__hobbies {
+    .about__beginning, .about__studies, .about__hobbies{
         width: 75%;
     }
 
@@ -364,11 +420,16 @@ hr{
         width: 70%;
     }
 
+    .about__hobbies-text{
+        height: 7vh;
+        width: 90%;
+    }
+
     .about__skills{
         display: flex;
         flex-direction: row;
         width: 70%;
-        height: 35vh;
+        height: 38vh;
     }
     .skill__name h4{
         font-size: 15pt;
@@ -396,9 +457,18 @@ hr{
         width: 65%;
     }
 
+    .about__hobbies-div{
+        height: 10vh;
+    }
+
+    .about__hobbies-text{
+        height: 8vh;
+    }
+
     .about__skills{
         width: 55%;
         margin-bottom: 20px;
+        height: 40vh;
     }
 
     .card{
@@ -417,10 +487,6 @@ hr{
 }
 
 @media (min-width: 1440px){
-    /* .about__container {
-        height: 90vh;
-    } */
-
     .card{
         width: 18rem;
     }
@@ -435,13 +501,25 @@ hr{
         height: 20vh;
     }
 
-    .about__beginning, .about__studies, .about__hobbies {
+    .about__beginning, .about__studies, .about__hobbies, .about__hobbies{
         width: 62%;
     }
 
-    /* .about__container{
-        height: 67vh;
-    } */
+    .game{
+        height: 3vh;
+    }
+
+    .corgi{
+        height: 6vh;
+    }
+
+    .movie{
+        height: 9vh;
+    }
+
+    .about__hobbies-text{
+        height: 5vh;
+    }
 
     .about__skills{
         width: 48%;
