@@ -3,17 +3,19 @@ body{
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     /* background-color: rgb(231, 189, 189) ; */
+    background-color: rgb(248, 245, 245);
 }
 
 main{
     background-color: rgb(180, 176, 176);
     border-radius: 5px;
     height: 75vh;
-    width: 25%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid grey;
-    margin-top: 70px;
+    margin-top: 55px;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,.2);
+
 }
 
 .title{
@@ -54,7 +56,7 @@ img{
 
 input{
     height: 4vh;
-    width: 17vw;
+    width: 67vw;
     padding-left: 10px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -81,10 +83,108 @@ div{
 #street, #complement, #neighborhood, #city, #state{
     background-color: #ece4e4;
     height: 4vh;
-    width: 20vw;
+    width: 75vw;
     margin-top: 5px;
     border-radius: 5px;
     padding-left: 8px;
     display: flex;
     align-items: center;
+}
+
+
+@media(min-width: 640px){
+    main{
+        width: 60%;
+        height: 90vh;
+    }
+
+    input{
+        width: 40vw;
+    }
+
+    #street, #complement, #neighborhood, #city, #state{
+        width: 45vw;
+    }
+
+    .data{
+       height: 65vh;
+    }
+}
+
+@media(min-width: 768px){
+    main{
+        width: 70%;
+        height: 55vh;
+    }
+
+    input{
+        width: 50vw;
+    }
+
+    #street, #complement, #neighborhood, #city, #state{
+        width: 55vw;
+    }
+
+    .data{
+        height: 40vh;
+    }
+}
+
+@media(min-width: 1024px){
+    main{
+        width: 50%;
+        height: 70vh;
+    }
+
+    input{
+        width: 36vw;
+    }
+
+    #street, #complement, #neighborhood, #city, #state{
+        width: 39vw;
+    }
+
+    .data{
+        height: 50vh;
+    }
+}
+
+@media(min-width: 1280px){
+    main{
+        width: 35%;
+        height: 80vh;
+    }
+
+    input{
+        width: 25vw;
+    }
+
+    #street, #complement, #neighborhood, #city, #state{
+        width: 27vw;
+        height: 4vh;
+    }
+
+    .data{
+        height: 55vh;
+    }
+}
+
+@media(min-width: 1920px){
+    main{
+        height: 55vh;
+    }
+
+    input{
+        width: 26vw;
+        height: 3vh;
+    }
+
+    .data{
+        height: 37vh;
+    }
+
+    #street, #complement, #neighborhood, #city, #state{
+        width: 28vw;
+        height: 3vh;
+    }
 }
