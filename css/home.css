@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    
+
 } */
 
 /* .about__hobbies div{
@@ -27,7 +27,7 @@ body{
 h1, h2, h3{
     color: #428f96;
     font-size: 20pt;
-    
+
 }
 
 h1{
@@ -64,7 +64,7 @@ nav{
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: #66b6bd;  
+    color: #66b6bd;
 }
 
 .navbar-light .navbar-nav .nav-link:hover{
@@ -76,7 +76,7 @@ nav{
 }
 
 .summary__photo{
-    height: 47vh;
+    height: 40vh;
     border-radius: 100%;
 }
 
@@ -169,27 +169,24 @@ hr{
     color: #737374;
 }
 .skills__container{
-    /* background-color: #dfe0e0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .about__skills{
-    /* background-color: #dfe0e0; */
-    width: 100%;
-    border-radius: .25rem;
+    width: 90%;
     display: flex;
-    height: 62vh;
-    flex-direction: column;
+    height: 40vh;
+    /* flex-direction: column; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 10px;
 }
 
 .skill__name h4{
     color: #575454;
-    font-size: 10pt;
+    font-size: 1rem;
 }
 
 .skill{
@@ -211,21 +208,25 @@ hr{
 .about__skills-flex{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: center;
+    width: 50%;
     justify-content: center;
+    padding: 15px;
 }
 
 .skills__content{
     display: flex;
-    width: 90%;
+    width: 45%;
     text-align: left;
-    justify-content: center;
-    
+    justify-content: space-evenly
 }
 
 .skill__name{
     width: 30%;
+}
+
+.icon{
+    font-size: 1.2rem;
+    color: #66b6bd;
 }
 
 .projects{
@@ -298,10 +299,6 @@ hr{
     .summary__container:nth-child(2){
         height: 50vh;
     }
-
-    .about__skills{
-        height: 45vh;
-    }
 }
 
 @media(min-width: 375px){
@@ -309,16 +306,11 @@ hr{
         height: 50vh;
     }
 
-    .about__skills{
-        height: 55vh;
-        margin: 0;
-    }
-    
     .about__hobbies-div{
         height: 11vh;
     }
 
-    
+
 }
 
 @media(min-width: 425px){
@@ -335,7 +327,12 @@ hr{
 
 @media(min-width: 640px){
     .about__skills{
-        height: 65vh;
+        height: 50vh;
+    }
+
+    .about__skills-flex{
+        
+        padding: 0;
     }
 
 }
@@ -390,8 +387,8 @@ hr{
 
     }
 
-    .skill__name h4{
-        font-size: 11pt;
+    .icon{
+        font-size: 1.5rem;
     }
 }
 
@@ -427,13 +424,8 @@ hr{
     }
 
     .about__skills{
-        display: flex;
-        flex-direction: row;
-        width: 70%;
         height: 38vh;
-    }
-    .skill__name h4{
-        font-size: 15pt;
+        width: 55%;
     }
 
     .card{
@@ -453,7 +445,7 @@ hr{
     .summary__container-text{
         width: 48%;
     }
-    
+
     .about__container{
         width: 65%;
     }
@@ -467,9 +459,19 @@ hr{
     }
 
     .about__skills{
-        width: 55%;
+        width: 84%;
         margin-bottom: 20px;
         height: 40vh;
+    }
+
+    .about__skills-flex{
+        align-items: center;
+        width: 40%;
+        padding-right: 50px;
+    }
+
+    .skills__content{
+        width: 20%;
     }
 
     .card{
@@ -478,13 +480,13 @@ hr{
 
     .projects__container{
         width: 70%;
-        
+
     }
 
     h2{
         margin-bottom: 20px;
     }
-    
+
 }
 
 @media (min-width: 1440px){
@@ -523,15 +525,15 @@ hr{
     }
 
     .about__skills{
-        width: 48%;
-        height: 30vh;
+        width: 71%;
+        height: 25vh;
     }
 
     .projects__container{
         width: 70%;
     }
-    
+
     .card{
-        width: 24rem;
+        width: 25rem;
     }
 }
